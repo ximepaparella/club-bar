@@ -90,6 +90,10 @@ video {
 
 /* HTML5 display-role reset for older browsers */
 
+html, a {
+    cursor:url('../img/cursor-60.png'), auto;
+}
+
 article,
 aside,
 details,
@@ -241,7 +245,7 @@ a {
 
 .club-bar {
     font-family: 'lumberjackregular';
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/bg-desktop.jpg);
     background-repeat: no-repeat;
     height: 100vh;
     overflow: hidden;
@@ -308,14 +312,16 @@ a {
 .icons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
+    justify-content: center;    
 }
 
 .icons i {
     font-size:25px;
     color:#1d1d1b;
-    cursor:pointer
+}
+
+.icons a {
+    margin:0 10px;
 }
 
 .icons a:hover i{
@@ -379,6 +385,10 @@ a {
         bottom:30px;
         right:40px;
     }
+
+    .club-bar {
+        background-image: url(../img/bg-tablet.jpg);
+    }
 }
 
 /************** MOBILE **************/
@@ -389,6 +399,10 @@ a {
 
     .wrapper {
         height: 85%;
+    }
+
+    .club-bar {
+        background-image: url(../img/bg-mobile.jpg);
     }
 }
 
