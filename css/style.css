@@ -259,7 +259,21 @@ a {
 }
 
 .header .logo {
-    max-width: 260px;
+    height: 180px;
+}
+
+
+@media screen and (min-width:360px) and (max-width:767px) {
+    .header .logo {
+        height: 140px;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .header .logo {
+        height: 210px!important;
+    }
 }
 
 .wrapper {
@@ -284,6 +298,13 @@ a {
     font-size: 34px;
     padding-bottom: 25px;
     color: #1d1d1b;
+}
+
+@media screen and (max-width:767px) {
+    .menu a {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
 }
 
 .menu a:hover {
@@ -343,6 +364,7 @@ a {
     align-items: center;
 }
 
+
 .whatsapp a svg {
     width: 50px;
 }
@@ -379,6 +401,7 @@ a {
 
     .wrapper {
         height: 90%;
+        overflow: hidden;
     }
 
     .whatsapp {
@@ -398,7 +421,13 @@ a {
     }
 
     .wrapper {
-        height: 85%;
+        height: 75%;
+        overflow: hidden;
+    }
+
+    .whatsapp {
+        bottom: 10px;
+        right: 10px;
     }
 
     .club-bar {
@@ -407,3 +436,18 @@ a {
 }
 
 
+
+
+@media screen and (max-width:359px) {
+    .header .logo {
+        height: 130px;
+    }
+
+    .social {
+        margin-top:-30px!important;
+    }
+
+    .wrapper {
+        height: 83%!important;
+    }
+}
