@@ -90,7 +90,7 @@ video {
 
 /* HTML5 display-role reset for older browsers */
 
-html, a {
+ a:hover {
     cursor:url('../img/cursor-60.png'), auto;
 }
 
@@ -265,7 +265,7 @@ a {
 
 @media screen and (min-width:360px) and (max-width:767px) {
     .header .logo {
-        height: 140px;
+        height: 110px;
     }
 }
 
@@ -295,17 +295,11 @@ a {
 
 .menu a {
     font-family: 'lumberjackrough';
-    font-size: 34px;
+    font-size: 32px;
     padding-bottom: 25px;
     color: #1d1d1b;
 }
 
-@media screen and (max-width:767px) {
-    .menu a {
-        font-size: 28px;
-        padding-bottom: 20px;
-    }
-}
 
 .menu a:hover {
     text-decoration: underline;
@@ -383,6 +377,11 @@ a {
     margin: auto;
 }
 
+.footer .copyright a {
+    color:#000;
+    cursor: pointer;    
+}
+
 
 @media screen and (max-width:1366px) {
     .social {
@@ -412,6 +411,11 @@ a {
     .club-bar {
         background-image: url(../img/bg-tablet.jpg);
     }
+
+    .menu a {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
 }
 
 /************** MOBILE **************/
@@ -421,7 +425,7 @@ a {
     }
 
     .wrapper {
-        height: 75%;
+        height: 80%;
         overflow: hidden;
     }
 
@@ -430,8 +434,27 @@ a {
         right: 10px;
     }
 
+    .footer {
+        text-align: center;
+    }
+
+    .menu a {
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+
     .club-bar {
         background-image: url(../img/bg-mobile.jpg);
+    }
+
+    .divider {
+        background-image: url(../img/divider.png);
+        width: 252px;
+        height: 30px;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+        background-position: center center;
+        background-size: 140px;
     }
 }
 
