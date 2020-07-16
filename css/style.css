@@ -282,7 +282,7 @@ a {
     align-items: center;
     max-width: 1280px;
     margin: auto;
-    height: 95%;
+    height: 100%;
     justify-content: space-around;
 }
 
@@ -290,19 +290,19 @@ a {
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding-top:30px;
 
 }
 
 .menu a {
     font-family: 'lumberjackrough';
-    font-size: 32px;
+    font-size: 30px;
     padding-bottom: 25px;
     color: #1d1d1b;
 }
 
-
-.menu a:hover {
-    text-decoration: underline;
+.copyright br {
+    display:none;
 }
 
 @media screen and (min-width:1367px) {
@@ -313,7 +313,7 @@ a {
 
 .divider  {
     background-image: url('../img/divider.png');
-    width:254px;
+    width:162px;
     height:30px;
     background-repeat:no-repeat;
     margin-bottom:10px;
@@ -347,7 +347,7 @@ a {
 .whatsapp {
     position: absolute;
     right: 10%;
-    bottom: 50px;
+    bottom: 25px;
     z-index: 10;
     background-image: url(../img/bg-whatsapp.png);
     width: 81px;
@@ -387,7 +387,7 @@ a {
     .social {
         position: relative;
         z-index: 30;
-        margin-top:-50px;
+        margin-top:0px;
     } 
 }
 
@@ -399,7 +399,7 @@ a {
     }
 
     .wrapper {
-        height: 90%;
+        height: 100%;
         overflow: hidden;
     }
 
@@ -413,7 +413,7 @@ a {
     }
 
     .menu a {
-        font-size: 28px;
+        font-size: 35px;
         padding-bottom: 20px;
     }
 }
@@ -425,13 +425,22 @@ a {
     }
 
     .wrapper {
-        height: 80%;
+        height: 92%;
         overflow: hidden;
     }
+    
 
     .whatsapp {
-        bottom: 10px;
-        right: 10px;
+        bottom: 80px;
+        right: 20px;
+        background-size: contain;
+        width: 55px;
+        height: 55px;
+        background-repeat: no-repeat;
+    }
+
+    .whatsapp a svg {
+        width:35px;
     }
 
     .footer {
@@ -439,9 +448,10 @@ a {
     }
 
     .menu a {
-        font-size: 26px;
+        font-size: 29px;
         padding-bottom: 20px;
     }
+
 
     .club-bar {
         background-image: url(../img/bg-mobile.jpg);
@@ -456,6 +466,20 @@ a {
         background-position: center center;
         background-size: 140px;
     }
+
+    .footer {
+        padding:20px;
+    }
+
+    .copyright {
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .copyright br {
+        display:block;
+    }
+
 }
 
 
@@ -472,5 +496,9 @@ a {
 
     .wrapper {
         height: 83%!important;
+    }
+
+    .whatsapp a svg {
+        width:35px;
     }
 }
