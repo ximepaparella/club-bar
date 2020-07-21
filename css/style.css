@@ -235,6 +235,7 @@ a {
     content: "\e904";
 }
 
+  
 
 
 /************** Estilos Custom **************/
@@ -301,6 +302,17 @@ a {
     color: #1d1d1b;
 }
 
+.menu .with-text {
+    position:relative;
+}
+.menu .small-text {
+    position:absolute;
+    color:red;
+    font-size: 20px;
+    padding-left:10px;
+    top:-4px;
+}
+
 .copyright br {
     display:none;
 }
@@ -344,20 +356,41 @@ a {
     opacity:0.8;
 }
 
-.whatsapp {
+.container-whatsapp {
     position: absolute;
     right: 10%;
     bottom: 25px;
     z-index: 10;
-    background-image: url(../img/bg-whatsapp.png);
-    width: 81px;
-    text-align: center;
-    height: 78px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+.container-whatsapp .text {
+    width: 200px;
+    font-size: 22px;
+    line-height: 25px;
+    top: -40px;
+    position: relative;
+    left: 80px;
+}
+
+.container-whatsapp .next svg {
+    width: 50px;
+    position: absolute;
+    left: 56px;
+    top: 52px;
+}
+
+ .whatsapp {
+    background-image: url(../img/bg-whatsapp.png);
+    width: 81px;
+    height: 78px;
+    text-align: center;
+}
+
+.whatsapp a {
+    position: relative;
+    top: 15px;
+}
 
 .whatsapp a svg {
     width: 50px;
@@ -428,7 +461,33 @@ a {
         height: 92%;
         overflow: hidden;
     }
+
+
+    .container-whatsapp {
+        position: absolute;
+        right: 10%;
+        bottom: 22%;
+        z-index: 10;
+        display: flex;
+    }
+
+    .container-whatsapp .text {
+        width: 130px;
+        font-size: 17px;
+        line-height: 17px;
+        top: -20px;
+        position: relative;
+        left: 20px;
+    }
     
+
+    .container-whatsapp .next svg {
+        width: 30px;
+        position: absolute;
+        left: 76px;
+        transform: rotate(-15deg);
+        top: 31px;
+    }
 
     .whatsapp {
         bottom: 80px;
@@ -441,6 +500,8 @@ a {
 
     .whatsapp a svg {
         width:35px;
+        position:relative;
+        top:-5px;
     }
 
     .footer {
@@ -450,6 +511,11 @@ a {
     .menu a {
         font-size: 29px;
         padding-bottom: 20px;
+    }
+
+    .menu .small-text {
+        font-size:17px;
+        padding-left:5px;
     }
 
 
@@ -500,5 +566,34 @@ a {
 
     .whatsapp a svg {
         width:35px;
+    } 
+    
+    .container-whatsapp .text {
+        display:none;
+    }
+
+    .container-whatsapp {
+        position: absolute;
+        right: 5%;
+        bottom: 98px;
+        z-index: 10;
+        display: flex;
     }
 }
+
+
+@media screen and (max-width:767px) and (orientation: landscape) {
+
+    .club-bar {
+        overflow: inherit!important;
+    }
+    .wrapper {
+        height:100%!important;
+    }
+
+    .footer {
+        bottom: inherit; 
+    }
+} 
+
+
