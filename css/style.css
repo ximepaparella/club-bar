@@ -368,7 +368,7 @@ a {
     width: 200px;
     font-size: 22px;
     line-height: 25px;
-    top: -40px;
+    top: -30px;
     position: relative;
     left: 80px;
 }
@@ -377,7 +377,8 @@ a {
     width: 50px;
     position: absolute;
     left: 56px;
-    top: 52px;
+    transform: rotate(15deg);
+    top: 32px;
 }
 
  .whatsapp {
@@ -458,7 +459,7 @@ a {
     }
 
     .wrapper {
-        height: 92%;
+        height: 80%;
         overflow: hidden;
     }
 
@@ -466,7 +467,7 @@ a {
     .container-whatsapp {
         position: absolute;
         right: 10%;
-        bottom: 22%;
+        bottom: 21%;
         z-index: 10;
         display: flex;
     }
@@ -475,7 +476,7 @@ a {
         width: 130px;
         font-size: 17px;
         line-height: 17px;
-        top: -20px;
+        top: -10px;
         position: relative;
         left: 20px;
     }
@@ -485,8 +486,8 @@ a {
         width: 30px;
         position: absolute;
         left: 76px;
-        transform: rotate(-15deg);
-        top: 31px;
+        transform: rotate(15deg);
+        top: 24px;
     }
 
     .whatsapp {
