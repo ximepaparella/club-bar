@@ -91,7 +91,7 @@ video {
 /* HTML5 display-role reset for older browsers */
 
  a:hover {
-    cursor:url('../img/cursor-60.png'), auto;
+    cursor: pointer;
 }
 
 article,
@@ -374,11 +374,11 @@ a {
 }
 
 .container-whatsapp .next svg {
-    width: 50px;
+   width: 30px;
     position: absolute;
-    left: 56px;
-    transform: rotate(15deg);
-    top: 32px;
+    left: -10px;
+    transform: rotate(75deg);
+    top: 29px;
 }
 
  .whatsapp {
@@ -459,48 +459,49 @@ a {
     }
 
     .wrapper {
-        height: 80%;
+        height: 85%;
         overflow: hidden;
     }
 
 
     .container-whatsapp {
         position: absolute;
-        right: 10%;
-        bottom: 21%;
+        right: 5%;
+        bottom: 6%;
         z-index: 10;
         display: flex;
     }
 
     .container-whatsapp .text {
-        width: 130px;
+        width: 80px;
         font-size: 17px;
         line-height: 17px;
-        top: -10px;
-        position: relative;
-        left: 20px;
+        top: -43px;
+        position: inherit;
+        left: inherit;
+        text-align: center;
     }
     
 
     .container-whatsapp .next svg {
         width: 30px;
         position: absolute;
-        left: 76px;
-        transform: rotate(15deg);
-        top: 24px;
+        left: -10px;
+        transform: rotate(75deg);
+        top: 29px;
     }
 
     .whatsapp {
         bottom: 80px;
         right: 20px;
         background-size: contain;
-        width: 55px;
-        height: 55px;
+        width: 75px;
+        height: 75px;
         background-repeat: no-repeat;
     }
 
     .whatsapp a svg {
-        width:35px;
+        width:50px;
         position:relative;
         top:-5px;
     }
@@ -541,7 +542,10 @@ a {
     .copyright {
         text-align: center;
         line-height: 20px;
+        font-size: 12px;
+        line-height: 14px;
     }
+
 
     .copyright br {
         display:block;
